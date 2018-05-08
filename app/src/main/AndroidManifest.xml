@@ -31,23 +31,31 @@
                 android:value=".do_search" />
         </activity>
 
-        <!-- this activity enables the search dialog to initiate searches
-         in the SearchableActivity -->
-        <activity android:name=".do_search"
+        <!--
+         this activity enables the search dialog to initiate searches
+         in the SearchableActivity
+        -->
+        <activity
+            android:name=".do_search"
             android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
+
             <meta-data
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable" />
         </activity>
-
         <activity android:name=".date" />
         <activity android:name=".settings" />
         <activity android:name=".hate_topics" />
         <activity android:name=".topic_profile" />
-
+        <activity android:name=".partner_profile" />
+        <activity
+            android:name=".dateroom"
+            android:label="@string/title_activity_dateroom"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".register"></activity>
     </application>
 
 </manifest>

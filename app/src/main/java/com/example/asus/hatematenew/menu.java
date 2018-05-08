@@ -102,7 +102,7 @@ public class menu extends AppCompatActivity {
         switch(v.getId()){
             case R.id.findpartner_card : i = new Intent(this, find_partner.class); startActivity(i); break;
             case R.id.hateroom_card : i = new Intent(this, hate_room.class); startActivity(i); break;
-            case R.id.date_card : i = new Intent(this, date.class); startActivity(i); break;
+            case R.id.date_card : i = new Intent(this, dateroom.class); startActivity(i); break;
             case R.id.topics_card : i = new Intent(this, hate_topics.class); startActivity(i); break;
             default:break;
         }
