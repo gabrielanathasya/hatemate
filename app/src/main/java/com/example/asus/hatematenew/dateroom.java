@@ -29,13 +29,18 @@ public class dateroom extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dateroom);
-        Log.d(TAG, "onCreate: Starting.");
 
-        mSectionPageAdapter = new SectionPageAdapter(getSupportFragmentManager());
-
-        setupViewPager(mViewPager);
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
-        tabLayout.setupWithViewPager(mViewPager);
+        ViewPager viewPager = 
+//        Log.d(TAG, "onCreate: Starting.");
+//
+//        mSectionPageAdapter = new SectionPageAdapter(getSupportFragmentManager());
+//
+//        mViewPager = (ViewPager)findViewById(R.id.container);
+//
+//
+//        setupViewPager(mViewPager);
+//        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+//        tabLayout.setupWithViewPager(mViewPager);
     }
 
     private void setupViewPager(ViewPager viewPager){
