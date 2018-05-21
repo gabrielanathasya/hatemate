@@ -41,6 +41,7 @@
                 android:drawablePadding="10dp"
                 android:ems="10"
                 android:inputType="textPersonName"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
                 android:text="FULL NAME"
                 android:textColor="#FFF" />
 
@@ -53,6 +54,7 @@
                 android:drawablePadding="10dp"
                 android:ems="10"
                 android:inputType="date"
+                android:drawableLeft="@drawable/ic_date_black_24dp"
                 android:text="BIRTH DATE"
                 android:textColor="#FFF" />
 
@@ -64,6 +66,7 @@
                 android:background="@drawable/edittextbg"
                 android:drawablePadding="10dp"
                 android:inputType="textEmailAddress"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
                 android:text="EMAIL"
                 android:textColor="#FFF"
                 android:textColorHint="#fff" />
@@ -74,6 +77,7 @@
                 android:layout_height="35dp"
                 android:layout_margin="5dp"
                 android:background="@drawable/edittextbg"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
                 android:drawablePadding="10dp"
                 android:hint="USERNAME"
                 android:textColorHint="#fff" />
@@ -85,6 +89,7 @@
                 android:layout_margin="5dp"
                 android:background="@drawable/edittextbg"
                 android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
                 android:hint="PASSWORD"
                 android:inputType="textPassword"
                 android:textColorHint="#fff" />
