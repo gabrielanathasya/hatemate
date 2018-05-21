@@ -23,5 +23,6 @@ public class login extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        System.out.println("Ganteng");
     }
 }
