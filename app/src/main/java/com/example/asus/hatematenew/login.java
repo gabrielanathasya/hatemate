@@ -21,6 +21,7 @@ public class login extends AppCompatActivity {
                 openNextActivity();
             }
         });
+        System.out.println("Ganteng");
     }
     public void openNextActivity(){
         Intent intent = new Intent(this, menu.class);
