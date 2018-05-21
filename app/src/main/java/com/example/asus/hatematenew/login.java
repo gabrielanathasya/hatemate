@@ -14,17 +14,15 @@ public class login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        button = (Button) findViewById(R.id.login_btn);
+
+        button = (Button)findViewById(R.id.login_btn);
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                openNextActivity();
+                Intent intent = new Intent(v.getContext(), menu.class);
+                startActivity(intent);
             }
         });
         System.out.println("Ganteng");
-    }
-    public void openNextActivity(){
-        Intent intent = new Intent(this, menu.class);
-        startActivity(intent);
     }
 }
