@@ -18,18 +18,32 @@ public class find_partner extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find_partner);
 
+
         //defining cards
         partnerCard = (CardView) findViewById(R.id.partner_card);
 
         //add click listener to the cards
+        /*
         partnerCard.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 openNextActivity(v);
             }
         });
-    }
+        */
 
+        partnerCard.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                openNextActivity();
+            }
+        });
+    }
+    public void openNextActivity(){
+        Intent intent = new Intent(this, partner_profile.class);
+        startActivity(intent);
+    }
+/*
     public void openNextActivity(View v){
         Intent i;
 
@@ -38,5 +52,5 @@ public class find_partner extends AppCompatActivity {
             default:break;
         }
     }
-
+*/
 }

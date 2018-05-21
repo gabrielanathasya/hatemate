@@ -30,7 +30,7 @@ public class dateroom extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dateroom);
 
-        ViewPager viewPager = 
+        ViewPager viewPager = (ViewPager)
 //        Log.d(TAG, "onCreate: Starting.");
 //
 //        mSectionPageAdapter = new SectionPageAdapter(getSupportFragmentManager());
