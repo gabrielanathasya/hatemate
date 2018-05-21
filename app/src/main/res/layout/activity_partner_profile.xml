@@ -9,13 +9,14 @@
     >
 
     <LinearLayout
-        android:layout_width="361dp"
-        android:layout_height="163dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp"
         android:background="@drawable/gradientbg"
         android:gravity="center"
+        android:padding="15dp"
         >
 
         <ImageView
@@ -23,52 +24,79 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/emma_stone"
+            android:src="@drawable/emma_stone"
             android:layout_gravity="center"
+            android:padding="15dp"
             >
-            <corners android:radius="25dp"/>
-            <padding android:top="15dp" android:bottom="15dp" android:left="15dp" android:right="15dp"/>
         </ImageView>
 
         <TextView
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
             android:gravity="center"
             android:text="Emma Stone"
             android:textColor="#fff"
-            android:textSize="20sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/location"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
             android:gravity="center"
             android:text="Los Angeles, USA"
             android:textColor="#fff"
             android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/chat_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/buttonstylered"
+            android:layout_gravity="center"
+            android:text="MESSAGE"
+            android:textColor="#fff"
+            android:textSize="16sp" />
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/bio"
+    <LinearLayout
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Bio"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/bio_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
         android:text="Have you seen La La Land?"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="13sp"
+        android:textColor="#fff"
+        android:textSize="16sp"
         android:textStyle="italic"/>
-
+    </LinearLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="left"
         android:text="Similar Hate Topics"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
@@ -76,8 +104,11 @@
 
     <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="130dp"
-        android:fillViewport="true">
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -169,7 +200,7 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/topic_title"
+                                android:id="@+id/topic_title_2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="10dp"
@@ -181,7 +212,7 @@
                                 android:textStyle="bold" />
 
                             <TextView
-                                android:id="@+id/topic_desc"
+                                android:id="@+id/topic_desc_2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="10dp"
@@ -199,14 +230,4 @@
 
         </LinearLayout>
     </ScrollView>
-
-    <Button
-        android:id="@+id/chat_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/buttonstylered"
-        android:text="MESSAGE"
-        android:textColor="#560000"
-        android:textSize="20sp" />
 </LinearLayout>
