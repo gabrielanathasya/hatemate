@@ -45,11 +45,12 @@ public class dateroom extends AppCompatActivity {
 //        tabLayout.setupWithViewPager(mViewPager);
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle(getResources().getString(R.string.app_name));
-        TabItem tabChat = findViewById(R.id.tabChat);
         TabItem tabPlaces = findViewById(R.id.tabPlaces);
+        TabItem tabChat = findViewById(R.id.tabChat);
         ViewPager viewPager = findViewById(R.id.container);
         SectionPageAdapter pageAdapter = new SectionPageAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(pageAdapter);
+        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
     }
 
 //    private void setupViewPager(ViewPager viewPager){
