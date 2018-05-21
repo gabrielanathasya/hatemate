@@ -18,30 +18,15 @@ public class find_partner extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find_partner);
 
-
         //defining cards
         partnerCard = (CardView) findViewById(R.id.partner_card);
-
-        //add click listener to the cards
-        /*
         partnerCard.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                openNextActivity(v);
+                Intent intent = new Intent(v.getContext(), partner_profile.class);
+                startActivity(intent);
             }
         });
-        */
-
-        partnerCard.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                openNextActivity();
-            }
-        });
-    }
-    public void openNextActivity(){
-        Intent intent = new Intent(this, partner_profile.class);
-        startActivity(intent);
     }
 /*
     public void openNextActivity(View v){
