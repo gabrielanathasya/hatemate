@@ -1,6 +1,8 @@
 package com.example.asus.hatematenew;
 
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.support.v4.view.GravityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,7 +16,7 @@ import java.util.ArrayList;
 
 public class find_partner extends AppCompatActivity {
 
-    private CardView partnerCard;
+    //private CardView partnerCard;
     //private CardView partnerCard1, partnerCard2, partnerCard3, partnerCard4, partnerCard5;
     private RecyclerView recyclerView;
     private partnerAdapter adapter;
@@ -38,7 +40,7 @@ public class find_partner extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
         //defining cards
-        partnerCard = (CardView) findViewById(R.id.partner_card);
+        //partnerCard = (CardView) findViewById(R.id.partner_card);
         /*
         partnerCard1 = (CardView) findViewById(R.id.partner_card_1);
         partnerCard2 = (CardView) findViewById(R.id.partner_card_2);
@@ -48,6 +50,7 @@ public class find_partner extends AppCompatActivity {
         */
 
         //add click listener to the cards
+        /*
         partnerCard.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -55,6 +58,8 @@ public class find_partner extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        */
+            //--------------------OLD-------------------
         /*
         partnerCard1.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -95,11 +100,13 @@ public class find_partner extends AppCompatActivity {
 
     void addData(){
         partnerArrayList = new ArrayList<>();
-        partnerArrayList.add(new partnerClass("Cara Delevigne", "I'm a model from London", "86%", "","@drawable/cara"));
-        partnerArrayList.add(new partnerClass("Emma Stone", "Have you seen La La Land?", "80%", "","@drawable/emma_stone"));
-        partnerArrayList.add(new partnerClass("Miley Cyrus", "Coolest girl you'll ever meet", "75%", "","@drawable/miley_cyrus"));
-        partnerArrayList.add(new partnerClass("Beyonce", "Queen bee", "71%", "","@drawable/beyonce"));
-        partnerArrayList.add(new partnerClass("Emma Watson", "Feminist", "66%", "","@drawable/emma_watson"));
+        Resources res = getResources();
+
+        partnerArrayList.add(new partnerClass("Cara Delevigne", "I'm a model from London", "86%", res.getDrawable(R.drawable.cara)));
+        partnerArrayList.add(new partnerClass("Emma Stone", "Have you seen La La Land?", "80%", res.getDrawable(R.drawable.emma_watson)));
+        partnerArrayList.add(new partnerClass("Miley Cyrus", "Coolest girl you'll ever meet", "75%", res.getDrawable(R.drawable.miley_cyrus)));
+        partnerArrayList.add(new partnerClass("Beyonce", "Queen bee", "71%", res.getDrawable(R.drawable.beyonce)));
+        partnerArrayList.add(new partnerClass("Emma Watson", "Feminist", "66%", res.getDrawable(R.drawable.emma_watson)));
     }
 
     /*

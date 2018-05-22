@@ -28,13 +28,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_margin="15dp">
 
                 <TextView
                     android:id="@+id/partner_name"
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
                     android:gravity="left"
                     android:maxHeight="50dp"
                     android:maxWidth="130dp"
@@ -46,7 +46,6 @@
                     android:id="@+id/partner_bio"
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="5dp"
                     android:gravity="left"
                     android:maxHeight="40dp"

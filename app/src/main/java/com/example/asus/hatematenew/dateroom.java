@@ -1,5 +1,6 @@
 package com.example.asus.hatematenew;
 
+import android.content.Intent;
 import android.support.design.widget.TabItem;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -19,6 +20,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.Button;
 import android.widget.TextView;
 
 public class dateroom extends AppCompatActivity {
@@ -51,6 +53,26 @@ public class dateroom extends AppCompatActivity {
         SectionPageAdapter pageAdapter = new SectionPageAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(pageAdapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+
+
+        /*DHIRA INI GIMANA GW MAU BIKIN TABNYA BISA DIKLIK*/
+        /*
+        tabPlaces.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), places_fragment.class);
+                startActivity(intent);
+            }
+        });
+
+        tabChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), chat_fragment.class);
+                startActivity(intent);
+            }
+        });
+        */
     }
 
 //    private void setupViewPager(ViewPager viewPager){

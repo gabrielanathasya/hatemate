@@ -1,5 +1,7 @@
 package com.example.asus.hatematenew;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -46,6 +48,15 @@ public class partnerAdapter extends RecyclerView.Adapter<partnerAdapter.partnerV
             txtBio = (TextView) itemView.findViewById(R.id.partner_bio);
             txtMatchPercent = (TextView) itemView.findViewById(R.id.partner_match_percent);
             displayPic = (ImageView) itemView.findViewById(R.id.partner_display_photo);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Context context = v.getContext();
+                    Intent intent = new Intent(context, partner_profile.class);
+                    context.startActivity(intent);
+                }
+            });
         }
     }
 }

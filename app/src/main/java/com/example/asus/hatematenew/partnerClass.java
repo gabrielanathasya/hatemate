@@ -9,8 +9,15 @@ public class partnerClass {
     private String matchPercent;
     private String hateTopic;
     private Drawable displayPhoto;
-    private src
 
+    public partnerClass(String name, String bio, String matchPercent, Drawable displayPhoto) {
+        this.name = name;
+        this.bio = bio;
+        this.matchPercent = matchPercent;
+        this.displayPhoto = displayPhoto;
+    }
+
+    /*
     public partnerClass(String name, String bio, String matchPercent, String hateTopic, Drawable displayPhoto) {
         this.name = name;
         this.bio = bio;
@@ -18,7 +25,7 @@ public class partnerClass {
         this.hateTopic = hateTopic;
         this.displayPhoto = displayPhoto;
     }
-
+*/
     public String getName() {
         return name;
     }
