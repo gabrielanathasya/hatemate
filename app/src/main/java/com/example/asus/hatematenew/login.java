@@ -22,7 +22,6 @@ public class login extends AppCompatActivity {
             public void onClick(View v){
                 Intent intent = new Intent(v.getContext(), menu.class);
                 startActivity(intent);
-
             }
         });
         btnregist = (Button)findViewById(R.id.signin_btn);
