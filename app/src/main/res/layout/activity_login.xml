@@ -32,6 +32,7 @@
             android:drawableLeft="@drawable/ic_person_black_24dp"
             android:drawablePadding="10dp"
             android:hint="USERNAME"
+            android:textColorHighlight="#fff"
             android:textColorHint="#fff" />
 
         <EditText
@@ -43,6 +44,7 @@
             android:drawableLeft="@drawable/ic_lock_black_24dp"
             android:drawablePadding="10dp"
             android:hint="PASSWORD"
+            android:textColorHighlight="#fff"
             android:inputType="textPassword"
             android:textColorHint="#fff" />
 
@@ -80,7 +82,7 @@
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
                 android:padding="0dp"
-                android:text="Sign In"
+                android:text="Sign Up"
                 android:textColor="#ffbb55" />
         </LinearLayout>
 
