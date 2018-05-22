@@ -9,6 +9,7 @@ public class partnerClass {
     private String matchPercent;
     private String hateTopic;
     private Drawable displayPhoto;
+    private src
 
     public partnerClass(String name, String bio, String matchPercent, String hateTopic, Drawable displayPhoto) {
         this.name = name;

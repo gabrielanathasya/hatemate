@@ -95,11 +95,11 @@ public class find_partner extends AppCompatActivity {
 
     void addData(){
         partnerArrayList = new ArrayList<>();
-        partnerArrayList.add(new partnerClass("Cara Delevigne", "I'm a model from London", "86%"));
-        partnerArrayList.add(new partnerClass("Emma Stone", "Have you seen La La Land?", "80%"));
-        partnerArrayList.add(new partnerClass("Miley Cyrus", "Coolest girl you'll ever meet", "75%"));
-        partnerArrayList.add(new partnerClass("Beyonce", "Queen bee", "71%"));
-        partnerArrayList.add(new partnerClass("Emma Watson", "Feminist", "66%"));
+        partnerArrayList.add(new partnerClass("Cara Delevigne", "I'm a model from London", "86%", "","@drawable/cara"));
+        partnerArrayList.add(new partnerClass("Emma Stone", "Have you seen La La Land?", "80%", "","@drawable/emma_stone"));
+        partnerArrayList.add(new partnerClass("Miley Cyrus", "Coolest girl you'll ever meet", "75%", "","@drawable/miley_cyrus"));
+        partnerArrayList.add(new partnerClass("Beyonce", "Queen bee", "71%", "","@drawable/beyonce"));
+        partnerArrayList.add(new partnerClass("Emma Watson", "Feminist", "66%", "","@drawable/emma_watson"));
     }
 
     /*

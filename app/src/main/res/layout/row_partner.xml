@@ -21,7 +21,7 @@
                 android:id="@+id/partner_display_photo"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                <!--android:src="@drawable/cara"-->
+
                 />
 
             <LinearLayout
@@ -38,7 +38,6 @@
                     android:gravity="left"
                     android:maxHeight="50dp"
                     android:maxWidth="130dp"
-                    <!--android:text="Cara Delevigne"-->
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -52,7 +51,6 @@
                     android:gravity="left"
                     android:maxHeight="40dp"
                     android:maxWidth="130dp"
-                    <!--android:text="I'm a model from London"-->
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="13sp" />
             </LinearLayout>
@@ -75,7 +73,6 @@
                         android:id="@+id/partner_match_percent"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        <!--android:text="86%"-->
                         android:textColor="#fff"
                         android:textSize="22sp"
                         android:textStyle="bold" />
